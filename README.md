@@ -40,3 +40,5 @@ A SparkSession on the other hand is associated to a Spark Application:
 1. Generally, a session is an interaction between two or more entities
 2. In Spark 2.0 you can use SparkSession
 3. A SparkSession can be created without creating SparkConf, SparkContext or SQLContext, (they’re encapsulated within the SparkSession)
+
+Global temporary views are introduced in Spark 2.1.0 release. This feature is useful when you want to share data among different sessions and keep alive until your application ends.Please see a shot sample I wrote to illustrate the use for createTempView and createGlobalTempView
