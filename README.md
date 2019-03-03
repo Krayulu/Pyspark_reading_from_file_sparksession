@@ -25,3 +25,18 @@ createGlobalTempView() creates a global temporary view with this dataframe df. l
 spark.catalog.dropGlobalTempView("tempViewName") //syntax
 
 Also, one can destory these views by invoking spark.stop() command as well.
+
+# Basic difference of a Spark Application and a Spark Session
+Spark application can be used:
+
+1. Used for a single batch job
+2. Can used to invoke an interactive session with multiple jobs
+3. A long-lived server continually satisfying requests
+4. A Spark job can consist of more than just a single map and reduce
+5. A Spark Application can consist of more than one session
+
+A SparkSession on the other hand is associated to a Spark Application:
+
+1. Generally, a session is an interaction between two or more entities
+2. In Spark 2.0 you can use SparkSession
+3. A SparkSession can be created without creating SparkConf, SparkContext or SQLContext, (they’re encapsulated within the SparkSession)
