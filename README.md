@@ -12,7 +12,7 @@ It is released under the Apache License v2.
 3. Python 2.7 and above 
 
 # spark createOrReplaceTempView vs createGlobalTempView
-Spark Dataset 2.0+ provides two functions createOrReplaceTempView and  createGlobalTempView.The basic difference between both functions are:
+Spark Dataset 2.1 and above provides two functions createOrReplaceTempView and  createGlobalTempView.The basic difference between both functions are:
 
 df.createOrReplaceTempView("tempViewName") // syntax 
 
