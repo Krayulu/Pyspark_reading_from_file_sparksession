@@ -15,10 +15,12 @@ It is released under the Apache License v2.
 Spark Dataset 2.0+ provides two functions createOrReplaceTempView and  createGlobalTempView.The basic difference between both functions are:
 
 df.createOrReplaceTempView("tempViewName") // syntax 
+
 createOrReplaceTempView() creates or replaces a local temporary view with dataframe df. Lifetime of this view is dependent to SparkSession class, is you want to drop this view,
 spark.catalog.dropTempView("tempViewName") // syntax
 
 df.createGlobalTempView("tempViewName") // syntax 
+
 createGlobalTempView() creates a global temporary view with this dataframe df. life time of this view is dependent to spark application itself. If you want to drop,
 spark.catalog.dropGlobalTempView("tempViewName") //syntax
 
